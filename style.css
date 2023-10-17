@@ -96,25 +96,33 @@ button:disabled {
 }
 
 @media (max-width: 767px) {
+    body {
+        font-size: 24px;
+    }
+
     .container {
         max-width: 100%;
+        padding: 30px;
+        border-radius: 0;
+        box-shadow: none;
     }
 
     select,
     input {
-        font-size: 15px;
-        padding: 5px;
-        height: 80px;
-
+        font-size: 16px;
+        padding: 1px;
+        height: 60px;
+        margin-bottom: 30px;
+        width: 100%;
     }
 
     textarea {
-        height: 180px;
-
+        font-size: 20px;
+        height: 200px;
     }
 
     button {
-        font-size: 26px;
-        padding: 30px;
+        font-size: 24px;
+        padding: 20px;
     }
 }
