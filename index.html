@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WhatsApp Message Sender</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Send a WhatsApp Message</h1>
+        <div id="number-prefix-select">
+            <select id="prefix">
+                <option value="">Select a Prefix</option>
+            </select>
+            <input type="text" id="phoneNumber" placeholder="Enter the number (without 0)" required>
+        </div>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <div id="error-message" class="hidden">Please enter a valid phone number.</div>
+
+        <button id="sendButton" disabled>Send on WhatsApp</button>
+
+        <!-- WhatsApp Link and Copy Button -->
+        <p id="whatsappLink" class="hidden"></p>
+        <button id="copyButton" class="hidden">Copy Link</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
